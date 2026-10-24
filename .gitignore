@@ -1,0 +1,35 @@
+# Compiled Object & Executable files
+*.o
+*.obj
+*.out
+*.exe
+*.app
+*.dSYM/
+
+# C++ Build artifacts
+build/
+bin/
+
+# Java
+*.class
+*.jar
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# OS / Environment files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+
+# IDE / Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
