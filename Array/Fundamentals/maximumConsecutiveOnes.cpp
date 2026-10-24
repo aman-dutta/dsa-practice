@@ -6,7 +6,7 @@ using namespace std;
 
 // Time Complexity:  O(N) - single pass through the array
 // Space Complexity: O(1) - only two counter variables used
-int findMaxConsecutiveOnes(vector<int> nums){ 
+int findMaxConsecutiveOnes(const vector<int>& nums){ 
     int maxOnes = 0;
     int localOnes = 0;
     for(int i=0; i<nums.size(); i++){

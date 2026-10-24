@@ -14,7 +14,7 @@ using namespace std;
 // Approach 1: Simple Math (Sum of first N natural numbers)
 // Time Complexity:  O(N)
 // Space Complexity: O(1)
-int findMissingNumber_Math(vector<int> nums){
+int findMissingNumber_Math(const vector<int>& nums){
     int n = nums.size();
 
     long long requiredSum = (n*(n+1))/2;
@@ -30,6 +30,7 @@ int findMissingNumber_Math(vector<int> nums){
 // Approach 2: Cyclic Sort (Put each value at its matching index)
 // Time Complexity:  O(N)
 // Space Complexity: O(1)
+// Note: nums is passed by value so caller's array is not mutated
 int findMissingNumber_CyclicSort(vector<int> nums){
     int i=0; 
     int n = nums.size();
@@ -54,7 +55,7 @@ int findMissingNumber_CyclicSort(vector<int> nums){
 // Approach 3: XOR Bit Manipulation
 // Time Complexity:  O(N)
 // Space Complexity: O(1)
-int findMissingNumber_XOR(vector<int> nums){
+int findMissingNumber_XOR(const vector<int>& nums){
     int xorSum = nums.size();
 
     for(int i=0; i<nums.size(); i++){

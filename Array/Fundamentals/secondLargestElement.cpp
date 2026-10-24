@@ -16,7 +16,7 @@ using namespace std;
 // Approach 1: Using Max-Heap (Priority Queue)
 // Time Complexity:  O(N log N)
 // Space Complexity: O(N) auxiliary space
-int findSecondLargestElement_PriorityQueue(vector<int> nums){ // This is using extra memory
+int findSecondLargestElement_PriorityQueue(const vector<int>& nums){ // This is using extra memory
     priority_queue<int> pq;
     for(int i=0; i<nums.size(); i++){
         pq.push(nums[i]);
@@ -51,7 +51,7 @@ int findSecondLargestElement_PriorityQueue(vector<int> nums){ // This is using e
 // Approach 2: Optimal (Single-pass linear scan)
 // Time Complexity:  O(N)
 // Space Complexity: O(1)
-int findSecondLargestElement_Optimal(vector<int> nums){
+int findSecondLargestElement_Optimal(const vector<int>& nums){
     int largestElement = INT_MIN;
     int secondLargestElement = INT_MIN;
 
